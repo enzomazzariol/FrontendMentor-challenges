@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --purple: hsl(259, 100%, 65%);
+    --red: hsl(0, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+    --MainFamily: "Poppins";
+}
+
+body {
+    background-color: var(--Off-white);
+}
+
+.title {
+    font-size: 44px;
+    font-family: var(--MainFamily);
+    font-style: italic;
+    padding: 10px;
+    font-weight: 800;
+    color: var(--purple);
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.age-container {
+    background-color: var(--white);
+    height: 550px;
+    width: 700px;           
+    padding: 30px 50px 0px 50px;  /*top right botton left*/
+    border-radius: 13px 13px 120px 13px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Inputs data*/
+
+.date-container {
+    font-family: var(--MainFamily);
+    display: flex;
+    column-gap: 20px;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-label {
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--Smokey-grey);
+    margin-bottom: 5px;
+}
+
+.date-input {
+    width: 140px;
+    height: 60px;
+    border-radius: 8px;
+    border: 1px solid var(--Light-grey);
+    font-family: var(--MainFamily);
+    font-weight: 800;
+    font-size: 23px;
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+/*Separator with button*/
+
+.separator-container {
+    display: flex;
+    align-items: center;
+}
+
+.separator {
+    width: 120%;
+    height: 2px;
+    color: var(--Light-grey);
+    border: 2px solid var(--Off-white);
+}
+
+button {
+    margin-left: 4px;
+    padding: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    border: none;
+    background-color: var(--purple);
+    cursor:pointer;
+}
+
+
+/*Result*/
+
+.age-result-container {
+    font-family: var(--MainFamily);
+}
+
+
+.age-title {
+    font-size: 62px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.age {
+    font-size: 68px;
+    font-style: italic;
+    color: var(--purple);
+    letter-spacing: 6px;
+}
+
+.error-message {
+    font-size: 14px;
+    font-family: var(--MainFamily);
+    font-style: italic;
+}
+
+.attribution {
+    font-size: 14px;
+    font-family: var(--MainFamily);
+    padding: 10px;
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 676px) {
+    .age-container {
+        padding: 30px;
+        max-width: 460px;
+        min-height: 600px;
+    }
+
+    .date-container {
+        margin-bottom: 30px;
+    }
+
+    .date-input {
+        width: 120px;
+    }
+
+    .separator-container {
+        position: relative;
+        margin-bottom: 50px;
+        margin-top: 40px;
+    }
+
+    button {
+        position: absolute;
+        left: 165px;
+    }
+}
