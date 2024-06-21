@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | News homepage</title>
+</head>
+<body>
+  <div class="container">
+    <!--Header-->
+    <header>
+      <div>
+        <p class="logo">W.</p>
+      </div>
+      
+      <div class="navbar">
+        <ul class="navbar-list">
+          <a href="#" class="navbar-item">Home</a>
+          <a href="#" class="navbar-item">New</a>
+          <a href="#" class="navbar-item">Popular</a>
+          <a href="#" class="navbar-item">Trending</a>
+          <a href="#" class="navbar-item">Categories</a>
+        </ul>
+        <div class="menu-icon">
+          <img src="./assets/images/icon-menu.svg" alt="icono menu">
+      </div>
+      </div>
+    </header>
+
+    <!-- Menú lateral -->
+    <div class="menu-overlay">
+      <div class="menu">
+        <div class="close-icon">
+          <img src="./assets/images/icon-menu-close.svg" alt="icono menu close">
+         </div>
+          <ul class="menu-list">
+              <a href="#" class="menu-item">Home</a>
+              <a href="#" class="menu-item">New</a>
+              <a href="#" class="menu-item">Popular</a>
+              <a href="#" class="menu-item">Trending</a>
+              <a href="#" class="menu-item">Categories</a>
+          </ul>
+      </div>
+  </div>
+
+    <!--Grid-->
+    <section class="grid">
+
+      <!--Banner-->
+      <div class="banner-container">
+        <img src="./assets/images/image-web-3-desktop.jpg" alt="blog banner" class="banner-img">
+      </div>
+
+       <!--Title-->
+       <div class="title">
+        <h1>The Bright Future of Web 3.0?</h1>
+      </div>
+
+      <!--Info + button-->
+      <div class="info">
+        <p class="info-text">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+          But is it really fulfilling its promise?</p>
+
+          <div class="button-container">
+            <button href="#" target="_blank" class="info-button">READ MORE</button>
+          </div>
+      </div>
+
+      <!--New content-->
+      <div class="new">
+          <h2 class="new-title">New</h2>
+
+          <div class="new-box">
+             <h4 class="new-subtitle">Hydrogen VS Electric Cars</h4>
+             <p class="new-text">Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+
+          <div class="new-box">
+            <h4 class="new-subtitle">The Downsides of AI Artistry</h4>
+            <p class="new-text">What are the possible adverse effects of on-demand AI image generation?</p>
+          </div>
+
+          <div>
+            <h4 class="new-subtitle">Is VC Funding Drying Up?</h4>
+            <p class="new-text">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
+          
+      </div>
+
+      <!--Mini cards-->
+      <div class="cards-container">
+
+        <div class="card">
+          <img src="./assets/images/image-retro-pcs.jpg" alt="PCs retros" class="card-image">
+          
+          <div class="card-info">
+            <h5 class="card-number">01</h5>
+            <p class="card-title">Reviving Retro PCs</p>
+            <p class="card-text">What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./assets/images/image-top-laptops.jpg" alt="keybord" class="card-image">
+          
+          <div class="card-info">
+            <h5 class="card-number">02</h5>
+            <p class="card-title">Top 10 Laptops of 2022</p>
+            <p class="card-text">Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./assets/images/image-gaming-growth.jpg" alt="gaming growth" class="card-image">
+          
+          <div class="card-info">
+            <h5 class="card-number">03</h5>
+            <p class="card-title">The Growth of Gaming</p>
+            <p class="card-text">How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Enzo Mazzariol</a>.
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
