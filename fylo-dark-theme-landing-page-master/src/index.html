@@ -12,16 +12,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
 </head>
 <body class="bg-gray-900">
 
-  <header class="flex p-8 px-20 pt-12 justify-between">
+  <header class="p-7 flex justify-between lg:p-8 lg:px-20 lg:pt-12">
     <div class="">
       <img src="\images\logo.svg" alt="Fylo logo" class="h-8 w-auto">
     </div>
-    <ul class="flex gap-10 text-gray-200 font-raleway">
+    <ul class="flex gap-10 text-gray-200 font-raleway font-light">
       <li><a href="#" class="hover:text-teal-50 hover:underline duration-300">Features</a></li>
       <li><a href="#" class="hover:text-teal-50 hover:underline duration-300">Team</a></li>
       <li><a href="#" class="hover:text-teal-50 hover:underline duration-300">Sign In</a></li>
@@ -29,79 +31,92 @@
   </header>
 
   <!--Hero section-->
-  <section class="hero-section flex flex-col items-center justify-center py-8">
-    <img src="\images\illustration-intro.png" alt="Hero section" class="w-2/6">
-    <h1 class="text-gray-200 font-raleway font-bold text-4xl w-1/2 text-center leading-snug py-8"> 
+  <section class="hero-section flex flex-col items-center justify-center py-28 md:py-8">
+    <img src="\images\illustration-intro.png" alt="Hero section" class="w-3/4 md:w-2/6 lg:w-2/6">
+    <h1 class="text-gray-200 font-raleway font-bold text-center leading-snug py-8 text-3xl md:text-4xl w-96 md:w-1/2"> 
       All your files in one secure location, accessible anywhere.
     </h1>
-    <p class="text-gray-300 font-sans text-base font-light text-center">Fylo stores all your most important files in one secure location.</p>
-    <p class="text-gray-300 font-sans text-base font-light text-center">Access them wherever you need, share and collaborate with</p>
-    <p class="text-gray-300 font-sans text-base font-light text-center">friends family, and co-workers.</p>
+    <p class="text-gray-300 font-sans text-base font-light text-center w-96 md:w-[29%]">
+      Fylo stores all your most important files in one secure location.
+      Access them wherever you need, share and collaborate with
+      friends family, and co-workers.
+    </p>
 
-    <button class="bg-cyan-500 text-gray-200 font-semibold py-2 px-14 rounded-2xl my-8">Get Started</button>
+    <button class="bg-cyan-500 text-gray-200 font-semibold py-2 px-14 rounded-3xl my-8 hover:bg-cyan-400 duration-200">Get Started</button>
   </section>
 
   <!--Features section-->
-  <section class="grid grid-cols-2 gap-y-14 px-20 place-items-center">
+  <section class="grid grid-cols-1 lg:grid-cols-2 gap-y-20 lg:gap-y-14 lg:px-20 place-items-center">
     <div class="text-center flex flex-col items-center justify-center">
-      <img src="\images\icon-access-anywhere.svg" alt="icon access anywhere" class="w-24 mb-4">
-      <h3 class="text-gray-200 font-raleway font-bold text-lg">Access your files, anywhere</h3>
-      <p class="text-gray-300 font-raleway font-light text-base">The ability to use a smartphone, tablet, or computer</p>
-      <p class="text-gray-300 font-raleway font-light text-base">to access your account means your files follow you</p>
-      <p class="text-gray-300 font-raleway font-light text-base">everywhere.</p>
+      <img src="\images\icon-access-anywhere.svg" alt="icon access anywhere" class="w-20 md:w-24 mb-7 md:mb-4">
+      <h3 class="text-gray-200 font-raleway font-bold text-lg mb-2">Access your files, anywhere</h3>
+      <p class="text-gray-300 font-raleway font-light text-base w-80">
+        The ability to use a smartphone, tablet, or computer
+        to access your account means your files follow you
+        everywhere.
+      </p>
     </div>
 
     <div class="text-center flex flex-col items-center justify-center">
-      <img src="\images\icon-security.svg" alt="icon access anywhere" class="w-24 mb-4">
-      <h3 class="text-gray-200 font-raleway font-bold text-lg">Security you can trust</h3>
-      <p class="text-gray-300 font-raleway font-light text-base">2-factor authentication and user-controlled encryption are</p>
-      <p class="text-gray-300 font-raleway font-light text-base">just a couple of the security features we allow to help</p>
-      <p class="text-gray-300 font-raleway font-light text-base">secure your files.</p>
+      <img src="\images\icon-security.svg" alt="icon access anywhere" class="w-20 md:w-24 mb-7 md:mb-4">
+      <h3 class="text-gray-200 font-raleway font-bold text-lg mb-2">Security you can trust</h3>
+      <p class="text-gray-300 font-raleway font-light text-base w-80">
+        2-factor authentication and user-controlled encryption are
+        just a couple of the security features we allow to help
+        secure your files.
+      </p>
     </div>
 
     <div class="text-center flex flex-col items-center justify-center">
-      <img src="\images\icon-collaboration.svg" alt="icon access anywhere" class="w-24 mb-4">
-      <h3 class="text-gray-200 font-raleway font-bold text-lg">Real-time collaboration</h3>
-      <p class="text-gray-300 font-raleway font-light text-base">Securely share files and folders with friends, family and</p>
-      <p class="text-gray-300 font-raleway font-light text-base">colleagues for live collaboration. No email attachments</p>
-      <p class="text-gray-300 font-raleway font-light text-base">required.</p>
+      <img src="\images\icon-collaboration.svg" alt="icon access anywhere" class="w-20 md:w-24 mb-7 md:mb-4">
+      <h3 class="text-gray-200 font-raleway font-bold text-lg mb-2">Real-time collaboration</h3>
+      <p class="text-gray-300 font-raleway font-light text-base w-80">
+        Securely share files and folders with friends, family and
+        colleagues for live collaboration. No email attachments
+        required.
+      </p>
     </div>
 
     <div class="text-center flex flex-col items-center justify-center">
-      <img src="\images\icon-any-file.svg" alt="icon access anywhere" class="w-24 mb-4">
-      <h3 class="text-gray-200 font-raleway font-bold text-lg">Store any type of file</h3>
-      <p class="text-gray-300 font-raleway font-light text-base">Whether you're sharing holidays photos or work</p>
-      <p class="text-gray-300 font-raleway font-light text-base">documents, Fylo has you covered allowing for all file</p>
-      <p class="text-gray-300 font-raleway font-light text-base">types to be securely stored and shared.</p>
+      <img src="\images\icon-any-file.svg" alt="icon access anywhere" class="w-20 md:w-24 mb-7 md:mb-4">
+      <h3 class="text-gray-200 font-raleway font-bold text-lg mb-2">Store any type of file</h3>
+      <p class="text-gray-300 font-raleway font-light text-base w-80">
+        Whether you're sharing holidays photos or work
+        documents, Fylo has you covered allowing for all file
+        types to be securely stored and shared.
+      </p>
     </div>
   </section>
 
   <!--Stay productive section-->
-  <section class="grid grid-cols-2 px-20 items-center py-36">
-    <div class="w-2/3 flex items-center justify-center ms-44">
+  <section class="grid grid-cols-1 xl:grid-cols-2 px-12 md:px-20 items-center gap-y-12 py-28 lg:py-36">
+    <div class="w-full lg:w-2/3 md:flex md:items-center md:justify-center lg:flex lg:items-center lg:justify-center lg:ms-44">
       <img src="\images\illustration-stay-productive.png" alt="stay productive image" class="">
     </div>
-    <div class="gap-y-28">
-      <h2 class="font-raleway font-bold text-4xl text-white w-2/4 leading-tight mb-4">Stay productive, wherever you are</h2>
-      <p class="text-gray-300 font-raleway font-light text-base w-8/12 mb-3">Never let location be an issue when accessing your files. Fylo has you covered for all of your file
+    <div class="gap-y-28 w-full md:gap-0 md:flex md:flex-col md:items-center md:justify-center xl:items-start xl:justify-start">
+      <h2 class="font-raleway font-bold text-2xl md:text-center md:text-4xl text-white lg:w-1/2 lg:text-start leading-tight mb-4 ">Stay productive, wherever you are</h2>
+      <p class="text-gray-300 font-raleway font-light text-base md:w-8/12 lg:w-6/12 mb-3">Never let location be an issue when accessing your files. Fylo has you covered for all of your file
       storage needs.</p>
-      <p class="text-gray-300 font-raleway font-light text-base w-9/12 mb-3">Securely share files and folders with friends, family and colleagues for live collaboration. No email
+      <p class="text-gray-300 font-raleway font-light text-base md:w-8/12 lg:w-6/12 mb-3">Securely share files and folders with friends, family and colleagues for live collaboration. No email
       attachments required.</p>
-      <p class="text-gray-300 font-raleway font-light text-base pb-1 w-fit hover:border-b-2">
-        <a href="#" class="">See how Fylo works
+      <p class="text-gray-300 font-raleway font-light text-base md:w-8/12 lg:w-6/12 xl:w-fit md:self-center xl:self-start pb-1 hover:border-b-2">
+        <a href="#">See how Fylo works
           <img src="\images\icon-arrow.svg" alt="arrow right icon" class="inline-block w-5 h-5 hover:text-cyan-50">
         </a>
       </p>
     </div>
   </section>
 
+  <div class="relative">
+    <img src="\images\bg-quotes.png" alt="comillas image" class="absolute w-12 h-10 object-cover left-[40px] md:left-[137px] -top-8 -z-50">
+  </div>
   <!--Testimonials section-->
-  <section class="grid grid-cols-3 place-items-center px-36 gap-x-10 mb-80">
-    <div class="flex flex-col bg-gray-800 p-7 text-gray-200 font-raleway rounded-md w-full shadow-md">
+  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center px-12 md:px-36 gap-y-10 md:gap-x-10 mb-64">
+    <div class="flex flex-col bg-gray-800 p-7 text-gray-200 font-raleway rounded-md w-full h-full shadow-md">
       <p class="mb-6 mt-3">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
       become a well-oiled collaboration machine.</p>
       <div class="flex">
-        <img src="\images\profile-1.jpg" alt="profile photo" class="w-10 rounded-full object-cover me-3">
+        <img src="\images\profile-1.jpg" alt="profile photo" class="w-10 h-10 rounded-full object-cover me-3">
         <div class="flex flex-col">
           <p>Satish Patel</p>
           <small>Founder & CEO, Huddle</small>
@@ -109,11 +124,11 @@
       </div>
     </div>
 
-    <div class="flex flex-col bg-gray-800 p-7 text-gray-200 font-raleway w-full rounded-md shadow-md">
+    <div class="flex flex-col bg-gray-800 p-7 text-gray-200 font-raleway w-full h-full rounded-md shadow-md">
       <p class="mb-6 mt-3">Switching to Fylo has been a game-changer for our workflow. Our team now collaborates seamlessly, and projects are
       completed faster than ever.</p>
       <div class="flex">
-        <img src="\images\profile-2.jpg" alt="profile photo" class="w-10 rounded-full object-cover me-3">
+        <img src="\images\profile-2.jpg" alt="profile photo" class="w-10 h-10 rounded-full object-cover me-3">
         <div class="flex flex-col">
           <p>Bruce McKenzie</p>
           <small>Founder & CEO, Huddle</small>
@@ -121,11 +136,11 @@
       </div>
     </div>
 
-    <div class="flex flex-col bg-gray-800 p-7 text-gray-200 font-raleway w-full rounded-md shadow-md">
+    <div class="flex flex-col bg-gray-800 p-7 text-gray-200 font-raleway w-full h-full rounded-md shadow-md">
       <p class="mb-6 mt-3">Fylo has transformed the way we work. Its intuitive design and robust features have streamlined our processes and
       boosted team efficiency significantly.</p>
       <div class="flex">
-        <img src="\images\profile-3.jpg" alt="profile photo" class="w-10 rounded-full object-cover me-3">
+        <img src="\images\profile-3.jpg" alt="profile photo" class="w-10 h-10 rounded-full object-cover me-3">
         <div class="flex flex-col">
           <p>Iva Boyd</p>
           <small>Founder & CEO, Huddle</small>
@@ -135,67 +150,76 @@
   </section>
 
   <!--Call to action-->
-  <section class="relative">
-    <div class="absolute p-11 left-96 top-[-120px] shadow-2xl shadow-black rounded-md bg-slate-900 max-w-3xl flex flex-col items-center justify-center">
-      <h3 class="text-gray-200 font-raleway font-bold text-3xl text-center py-4">Get early access today</h3>
-      <p class="text-gray-300 font-raleway font-light text-base w-4/5 text-center mb-6">It only takes a minute to sign up and
-        our free starter tier is extremely generous. If you have any
+  <section class="relative px-24">
+    <div class="absolute p-11 top-[-80px] left-6 lg:left-96 lg:top-[-120px] shadow-2xl shadow-black rounded-md bg-gray-800 max-w-[430px] md:max-w-3xl flex flex-col items-center justify-center">
+      <h3 class="text-gray-200 font-raleway font-bold text-2xl md:text-3xl text-center py-4">Get early access today</h3>
+      <p class="text-gray-300 font-raleway font-light text-base w-11/12 md:w-4/5 text-center mb-6">It only takes a minute to sign up and
+        our free starter tier is extremely generous.  If you have any
         questions, our support team would be happy to help you.</p>
-      <div class="flex w-full items-center gap-x-6">
-        <input type="email" class="h-10 flex-grow border-gray-300 rounded-3xl px-4 focus:outline-none"
-          placeholder="Enter your email" required>
-        <button class="bg-cyan-500 text-gray-200 font-semibold py-2 px-10 rounded-3xl">
+      <div class="flex flex-col md:flex-row w-full items-center md:gap-x-6 gap-y-4">
+        <input type="email" class="h-10 flex-grow border-gray-300 rounded-3xl px-4 text-xs md:text-base focus:outline-none w-11/12 md:w-auto"
+          placeholder="Enter your email" id="email-input" required>
+        <button class="bg-cyan-500 text-gray-200 font-semibold py-2 px-10 rounded-3xl w-11/12 md:w-auto hover:bg-cyan-400 duration-200" id="button-email">
           Get Started For Free
         </button>
       </div>
+      <p class="error self-start text-red-600 text-sm mt-2 ms-4 font-raleway font-medium hidden" id="error-message">Please enter a valid email address</p>
     </div>
   </section>
 
-  <footer class="bg-gray-950 p-24 px-[150px]">
-    <div class="grid grid-rows-2 pt-24">
-      <img src="\images\logo.svg" alt="Fylo logo" class="h-8 w-auto">
+  <!--Footer section-->
+  <footer class="bg-gray-950 p-16 lg:p-24 lg:px-[150px]">
+    <div class="grid lg:grid-rows-2 mt-72 md:pt-24 lg:mt-12">
+      <img src="\images\logo.svg" alt="Fylo logo" class="h-12 md:h-8 w-auto mb-12">
 
-      <div class="text-gray-200 grid grid-cols-[400px_auto_auto_auto_auto]">
+      <div class="text-gray-200 grid grid-cols-1 lg:grid-cols-[300px_auto_auto_auto] xl:grid-cols-[300px_auto_auto_auto_auto] gap-x-12">
 
-        <div class="flex gap-x-4 me-12">
-          <img src="\images\icon-location.svg" alt="location icon" class="w-5 h-5">
-          <p class="text-gray-300 font-raleway font-light text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        <div class="flex gap-x-7 me-12">
+          <img src="\images\icon-location.svg" alt="location icon" class="w-5 h-5 mt-1">
+          <p class="text-gray-300 font-raleway font-light text-base mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua</p>
         </div>
 
-        <div class="flex flex-col gap-y-2">
-          <span class="flex gap-x-4">
-            <img src="\images\icon-phone.svg" alt="phone icon" class="w-5 h-5 me-2">
+        <div class="flex flex-col gap-y-5 mb-14">
+          <span class="flex gap-x-5">
+            <img src="\images\icon-phone.svg" alt="phone icon" class="w-5 h-5 mt-1">
             <p class="text-gray-300 font-raleway font-light text-base">+1-543-123-4567</p>
           </span>
 
-          <span class="flex gap-x-4">
-            <img src="\images\icon-email.svg" alt="email icon" class="w-5 h-5 me-2">
+          <span class="flex gap-x-5">
+            <img src="\images\icon-email.svg" alt="email icon" class="w-5 h-4 mt-1">
             <p class="text-gray-300 font-raleway font-light text-base">example@fylo.com</p>
           </span>
         </div>
 
-        <div class="flex flex-col gap-y-2">
-          <p class="text-gray-300 font-raleway font-light text-base">About us</p>
-          <p class="text-gray-300 font-raleway font-light text-base">Jobs</p>
-          <p class="text-gray-300 font-raleway font-light text-base">Press</p>
-          <p class="text-gray-300 font-raleway font-light text-base">Blog</p>
+        <div class="flex flex-col gap-y-2 mb-10">
+          <p class="text-gray-300 font-raleway font-light text-base cursor-pointer hover:text-white">About us</p>
+          <p class="text-gray-300 font-raleway font-light text-base cursor-pointer hover:text-white">Jobs</p>
+          <p class="text-gray-300 font-raleway font-light text-base cursor-pointer hover:text-white">Press</p>
+          <p class="text-gray-300 font-raleway font-light text-base cursor-pointer hover:text-white">Blog</p>
         </div>
 
         <div class="flex flex-col gap-y-2">
-          <p class="text-gray-300 font-raleway font-light text-base"> Contact us</p>
-          <p class="text-gray-300 font-raleway font-light text-base">Terms</p>
-          <p class="text-gray-300 font-raleway font-light text-base">Privacy</p>
+          <p class="text-gray-300 font-raleway font-light text-base cursor-pointer hover:text-white">Contact Us</p>
+          <p class="text-gray-300 font-raleway font-light text-base cursor-pointer hover:text-white">Terms</p>
+          <p class="text-gray-300 font-raleway font-light text-base cursor-pointer hover:text-white">Privacy</p>
         </div>
 
-        <div class="flex gap-x-4">
-          <img src="\images\icon-arrow.svg" alt="" class="w-5 h-5">
-          <img src="\images\icon-arrow.svg" alt="" class="w-5 h-5">
-          <img src="\images\icon-arrow.svg" alt="" class="w-5 h-5">
+        <div class="flex gap-x-4 justify-center items-center md:col-span-4 lg:col-auto pt-20 lg:pt-0 lg:justify-start lg:items-start">
+          <div class="border-gray-300 border-2 rounded-full p-2 w-10 h-10 flex justify-center items-center cursor-pointer hover:border-cyan-500 hover:text-cyan-500 duration-300">
+            <i class="fa-brands fa-facebook-f text-lg"></i>
+          </div>
+          <div class="border-gray-300 border-2 rounded-full p-2 w-10 h-10 flex justify-center items-center cursor-pointer hover:border-cyan-500 hover:text-cyan-500 duration-300">
+            <i class="fa-brands fa-twitter text-lg"></i>
+          </div>
+          <div class="border-gray-300 border-2 rounded-full p-2 w-10 h-10 flex justify-center items-center cursor-pointer hover:border-cyan-500 hover:text-cyan-500 duration-300">
+            <i class="fa-brands fa-instagram text-xl "></i>
+          </div>
         </div>
         
       </div>
     </div>
   </footer>
+  <script src="main.js"></script>
 </body>
 </html>
