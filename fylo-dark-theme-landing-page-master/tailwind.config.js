@@ -1,8 +1,9 @@
 module.exports = {
-  content: ['./*.html', './*.js'],
+  content: ['./*.html', './src/**/*.js'],  // Asegúrate de que la ruta de tus archivos JS también esté correcta
   theme: {
     extend: {
       colors: {
+        'custom-gray': '#181F2B',
         primary: {
           'intro': 'hsl(217, 28%, 15%)',
           'main': 'hsl(218, 28%, 13%)',

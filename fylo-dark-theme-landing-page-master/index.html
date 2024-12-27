@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="src/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
@@ -23,7 +23,7 @@
     <div class="">
       <img src="\images\logo.svg" alt="Fylo logo" class="h-8 w-auto">
     </div>
-    <ul class="flex gap-10 text-gray-200 font-raleway font-light">
+    <ul class="flex gap-6 md:gap-10 text-gray-200 font-raleway font-light">
       <li><a href="#" class="hover:text-teal-50 hover:underline duration-300">Features</a></li>
       <li><a href="#" class="hover:text-teal-50 hover:underline duration-300">Team</a></li>
       <li><a href="#" class="hover:text-teal-50 hover:underline duration-300">Sign In</a></li>
@@ -31,7 +31,7 @@
   </header>
 
   <!--Hero section-->
-  <section class="hero-section flex flex-col items-center justify-center py-28 md:py-8">
+  <section class="relative hero-section flex flex-col items-center justify-center py-28 md:py-8">
     <img src="\images\illustration-intro.png" alt="Hero section" class="w-3/4 md:w-2/6 lg:w-2/6">
     <h1 class="text-gray-200 font-raleway font-bold text-center leading-snug py-8 text-3xl md:text-4xl w-96 md:w-1/2"> 
       All your files in one secure location, accessible anywhere.
@@ -43,10 +43,12 @@
     </p>
 
     <button class="bg-cyan-500 text-gray-200 font-semibold py-2 px-14 rounded-3xl my-8 hover:bg-cyan-400 duration-200">Get Started</button>
+
+    <img id="bg-image" src="./images/bg-curvy-desktop.svg" alt="background image" class="absolute w-full h-full object-cover -z-10 top-[330px] left-0">
   </section>
 
   <!--Features section-->
-  <section class="grid grid-cols-1 lg:grid-cols-2 gap-y-20 lg:gap-y-14 lg:px-20 place-items-center">
+  <section class="grid grid-cols-1 lg:grid-cols-2 gap-y-20 lg:gap-y-14 lg:px-20 place-items-center bg-[#181F2B]">
     <div class="text-center flex flex-col items-center justify-center">
       <img src="\images\icon-access-anywhere.svg" alt="icon access anywhere" class="w-20 md:w-24 mb-7 md:mb-4">
       <h3 class="text-gray-200 font-raleway font-bold text-lg mb-2">Access your files, anywhere</h3>
@@ -89,7 +91,7 @@
   </section>
 
   <!--Stay productive section-->
-  <section class="grid grid-cols-1 xl:grid-cols-2 px-12 md:px-20 items-center gap-y-12 py-28 lg:py-36">
+  <section class="grid grid-cols-1 xl:grid-cols-2 px-12 md:px-20 items-center gap-y-12 py-28 lg:py-36 bg-[#181F2B]">
     <div class="w-full lg:w-2/3 md:flex md:items-center md:justify-center lg:flex lg:items-center lg:justify-center lg:ms-44">
       <img src="\images\illustration-stay-productive.png" alt="stay productive image" class="">
     </div>
@@ -111,8 +113,8 @@
     <img src="\images\bg-quotes.png" alt="comillas image" class="absolute w-12 h-10 object-cover left-[40px] md:left-[137px] -top-8 -z-50">
   </div>
   <!--Testimonials section-->
-  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center px-12 md:px-36 gap-y-10 md:gap-x-10 mb-64">
-    <div class="flex flex-col bg-gray-800 p-7 text-gray-200 font-raleway rounded-md w-full h-full shadow-md">
+  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center px-12 md:px-36 gap-y-10 md:gap-x-10 pb-64 bg-[#181F2B]">
+    <div class="flex flex-col bg-[#202a3c] p-7 text-gray-200 font-raleway rounded-md w-full h-full shadow-md">
       <p class="mb-6 mt-3">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
       become a well-oiled collaboration machine.</p>
       <div class="flex">
@@ -124,7 +126,7 @@
       </div>
     </div>
 
-    <div class="flex flex-col bg-gray-800 p-7 text-gray-200 font-raleway w-full h-full rounded-md shadow-md">
+    <div class="flex flex-col bg-[#202a3c] p-7 text-gray-200 font-raleway w-full h-full rounded-md shadow-md">
       <p class="mb-6 mt-3">Switching to Fylo has been a game-changer for our workflow. Our team now collaborates seamlessly, and projects are
       completed faster than ever.</p>
       <div class="flex">
@@ -136,7 +138,7 @@
       </div>
     </div>
 
-    <div class="flex flex-col bg-gray-800 p-7 text-gray-200 font-raleway w-full h-full rounded-md shadow-md">
+    <div class="flex flex-col bg-[#202a3c] p-7 text-gray-200 font-raleway w-full h-full rounded-md shadow-md">
       <p class="mb-6 mt-3">Fylo has transformed the way we work. Its intuitive design and robust features have streamlined our processes and
       boosted team efficiency significantly.</p>
       <div class="flex">
@@ -150,8 +152,8 @@
   </section>
 
   <!--Call to action-->
-  <section class="relative px-24">
-    <div class="absolute p-11 top-[-80px] left-6 lg:left-96 lg:top-[-120px] shadow-2xl shadow-black rounded-md bg-gray-800 max-w-[430px] md:max-w-3xl flex flex-col items-center justify-center">
+  <section class="relative px-24 bg-[#181F2B]">
+    <div class="absolute p-11 top-[-80px] left-8 lg:left-96 lg:top-[-120px] shadow-2xl shadow-black rounded-md bg-gray-800 max-w-[420px] md:max-w-3xl flex flex-col items-center justify-center">
       <h3 class="text-gray-200 font-raleway font-bold text-2xl md:text-3xl text-center py-4">Get early access today</h3>
       <p class="text-gray-300 font-raleway font-light text-base w-11/12 md:w-4/5 text-center mb-6">It only takes a minute to sign up and
         our free starter tier is extremely generous.  If you have any
@@ -168,15 +170,15 @@
   </section>
 
   <!--Footer section-->
-  <footer class="bg-gray-950 p-16 lg:p-24 lg:px-[150px]">
-    <div class="grid lg:grid-rows-2 mt-72 md:pt-24 lg:mt-12">
+  <footer class="bg-[#0b1523] p-16 lg:p-24 lg:px-[150px]">
+    <div class="grid lg:grid-rows-2 mt-80 md:pt-24 lg:mt-12">
       <img src="\images\logo.svg" alt="Fylo logo" class="h-12 md:h-8 w-auto mb-12">
 
-      <div class="text-gray-200 grid grid-cols-1 lg:grid-cols-[300px_auto_auto_auto] xl:grid-cols-[300px_auto_auto_auto_auto] gap-x-12">
+      <div class="text-gray-200 grid grid-cols-1 lg:grid-cols-[300px_auto_auto_auto] xl:grid-cols-[300px_auto_auto_auto_auto] gap-x-16">
 
         <div class="flex gap-x-7 me-12">
           <img src="\images\icon-location.svg" alt="location icon" class="w-5 h-5 mt-1">
-          <p class="text-gray-300 font-raleway font-light text-base mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          <p class="text-gray-300 font-raleway font-light text-base mb-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua</p>
         </div>
 
@@ -220,6 +222,6 @@
       </div>
     </div>
   </footer>
-  <script src="main.js"></script>
+  <script src="src/main.js"></script>
 </body>
 </html>
