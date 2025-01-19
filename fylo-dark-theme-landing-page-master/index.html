@@ -24,9 +24,9 @@
       <img src="\images\logo.svg" alt="Fylo logo" class="h-8 w-auto">
     </div>
     <ul class="flex gap-6 md:gap-10 text-gray-200 font-raleway font-light">
-      <li><a href="#" class="hover:text-teal-50 hover:underline duration-300">Features</a></li>
-      <li><a href="#" class="hover:text-teal-50 hover:underline duration-300">Team</a></li>
-      <li><a href="#" class="hover:text-teal-50 hover:underline duration-300">Sign In</a></li>
+      <li><a href="#" class="hover:text-teal-50 hover:underline underline-offset-4">Features</a></li>
+      <li><a href="#" class="hover:text-teal-50 hover:underline underline-offset-4">Team</a></li>
+      <li><a href="#" class="hover:text-teal-50 hover:underline underline-offset-4">Sign In</a></li>
     </ul>
   </header>
 
@@ -42,9 +42,13 @@
       friends family, and co-workers.
     </p>
 
-    <button class="bg-cyan-500 text-gray-200 font-semibold py-2 px-14 rounded-3xl my-8 hover:bg-cyan-400 duration-200">Get Started</button>
+    <button class="bg-cyan-500 text-gray-200 font-semibold py-2 px-14 rounded-3xl my-8 hover:bg-cyan-600 duration-200">Get Started</button>
 
-    <img id="bg-image" src="./images/bg-curvy-desktop.svg" alt="background image" class="absolute w-full h-full object-cover -z-10 top-[330px] left-0">
+    <picture>
+      <source media="(max-width: 768px)" srcset="./images/bg-curvy-mobile.svg">
+      <img src="./images/bg-curvy-desktop.svg" alt="background image"
+        class="absolute w-full h-full object-cover -z-10 top-[330px] left-0">
+    </picture>
   </section>
 
   <!--Features section-->
@@ -161,7 +165,7 @@
       <div class="flex flex-col md:flex-row w-full items-center md:gap-x-6 gap-y-4">
         <input type="email" class="h-10 flex-grow border-gray-300 rounded-3xl px-4 text-xs md:text-base focus:outline-none w-11/12 md:w-auto"
           placeholder="Enter your email" id="email-input" required>
-        <button class="bg-cyan-500 text-gray-200 font-semibold py-2 px-10 rounded-3xl w-11/12 md:w-auto hover:bg-cyan-400 duration-200" id="button-email">
+        <button class="bg-cyan-500 text-gray-200 font-semibold py-2 px-10 rounded-3xl w-11/12 md:w-auto hover:bg-cyan-600 duration-200" id="button-email">
           Get Started For Free
         </button>
       </div>
