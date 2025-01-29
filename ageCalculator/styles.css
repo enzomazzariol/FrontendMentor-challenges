@@ -110,7 +110,6 @@ button {
     font-family: var(--MainFamily);
 }
 
-
 .age-title {
     font-size: 62px;
     font-weight: 900;
@@ -136,21 +135,40 @@ button {
     padding: 10px;
 }
 
-/*Mobile*/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
 
-@media screen and (max-width: 676px) {
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Responsive */
+
+@media screen and (max-width: 730px) {
     .age-container {
+        max-width: 390px;
+        min-height: 500px;
         padding: 30px;
-        max-width: 460px;
-        min-height: 600px;
-    }
-
-    .date-container {
-        margin-bottom: 30px;
     }
 
     .date-input {
-        width: 120px;
+        font-size: 18px;
+        width: 100px;
+    }
+
+    .age {
+        font-size: 50px;
+    }
+
+    .age-title {
+        font-size: 52px;
+    }
+    
+    
+    .date-container {
+        margin-bottom: 30px;
     }
 
     .separator-container {
@@ -161,6 +179,6 @@ button {
 
     button {
         position: absolute;
-        left: 165px;
+        left: 125px;
     }
 }
